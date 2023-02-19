@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+}
+a{
+    text-decoration: none;
+}
+.blue{
+    color: #007bff;
+    margin-left: 5px;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.inline{
+    display: inline-block;
+    margin: 1rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+.title{
+    font-family: 'Lobster', cursive !important;
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.container{
+    margin: 50px 15%;
+}
+.row{
+    display: flex;
+}
+.col-6{
+    width: 48%;
+    margin: 0 1%;
+}
+.box{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+input{
+    line-height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+button{
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff;
+}
+button:hover{
+    background-color: #74b9ff;
+}
+.row-2{
+    width: 90%;
+    margin: 0.5rem 5% 0 5%;
+}
+.or{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.appstore, .chplay, .fb{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anh{
+    position: absolute;
+}
+.anh1, .anh2, .anh3, .anh4{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.slider{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 9.4%;
+}
+.nhap, .btn{
+    width: 90%;
+    margin: 0.5rem 5% 0 5%;
+}
+.divider{
+    height: 1px;
+    width: 50%;
+    background-color: #000;
+}
+.fb{
+    background-image: url('./images/fb.png');
+    width: 16px;
+    height: 16px;
+}
+.appstore{
+    background-image: url('./images/icon-appstore.png');
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-size: contain !important; 
+}
+.chplay{
+    background-image: url('./images/icon-chplay.png');
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-size: contain !important; 
+}
+.anh1{
+    opacity: 1;
+    animation-name: blur-1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+.anh2{
+    opacity: 0;
+    animation-name: blur-1;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 20;
+}
+.anh3{
+    opacity: 0;
+    animation-name: blur-1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 30;
+}
+.anh4{
+    opacity: 0;
+    animation-name: blur-1;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 40;
+}
+@keyframes blur-1 {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes blur-2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
